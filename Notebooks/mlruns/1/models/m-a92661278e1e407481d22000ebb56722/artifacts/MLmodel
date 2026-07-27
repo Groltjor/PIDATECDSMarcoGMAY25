@@ -1,0 +1,35 @@
+artifact_path: /Users/marcoantoniogarciamartinez/Documents/Python Local/Proyectos/PIDA/Notebooks/mlruns/1/models/m-a92661278e1e407481d22000ebb56722/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-a92661278e1e407481d22000ebb56722
+model_size_bytes: 31932
+model_uuid: m-a92661278e1e407481d22000ebb56722
+prompts: null
+run_id: a4e445dd03fd4a23b3915f56afc03c8a
+signature:
+  inputs: '[{"type": "long", "name": "conteo_requests", "required": true}, {"type":
+    "long", "name": "times_timestamp", "required": true}, {"type": "long", "name":
+    "request_amount", "required": true}, {"type": "long", "name": "routes_visited",
+    "required": true}, {"type": "long", "name": "activity_window_ms", "required":
+    true}, {"type": "double", "name": "mean_time_between_requests_ms", "required":
+    true}, {"type": "double", "name": "median_time_between_requests_ms", "required":
+    true}, {"type": "boolean", "name": "is_one_shot", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-01 17:59:40.595497'

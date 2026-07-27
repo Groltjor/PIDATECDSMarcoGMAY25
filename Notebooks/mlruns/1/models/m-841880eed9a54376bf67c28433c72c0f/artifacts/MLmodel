@@ -1,0 +1,50 @@
+artifact_path: /Users/marcoantoniogarciamartinez/Documents/Python Local/Proyectos/PIDA/Notebooks/mlruns/1/models/m-841880eed9a54376bf67c28433c72c0f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-841880eed9a54376bf67c28433c72c0f
+model_size_bytes: 14273
+model_uuid: m-841880eed9a54376bf67c28433c72c0f
+prompts: null
+run_id: b5b0d4b781844c73b26af0deb13f00b7
+signature:
+  inputs: '[{"type": "long", "name": "total_requests", "required": true}, {"type":
+    "long", "name": "rutas_recorridas", "required": true}, {"type": "long", "name":
+    "status_200", "required": true}, {"type": "long", "name": "status_304", "required":
+    true}, {"type": "long", "name": "status_404", "required": true}, {"type": "long",
+    "name": "get_requests", "required": true}, {"type": "long", "name": "post_requests",
+    "required": true}, {"type": "double", "name": "ms_mean_duration", "required":
+    true}, {"type": "double", "name": "ms_max_duration", "required": true}, {"type":
+    "double", "name": "ms_min_duration", "required": true}, {"type": "double", "name":
+    "ms_total_duration", "required": true}, {"type": "double", "name": "mem_total_used",
+    "required": true}, {"type": "double", "name": "mean_time_between_requests_filled",
+    "required": true}, {"type": "double", "name": "median_time_between_requests_filled",
+    "required": true}, {"type": "double", "name": "min_time_between_requests_filled",
+    "required": true}, {"type": "double", "name": "max_time_between_requests_filled",
+    "required": true}, {"type": "double", "name": "time_range_between_requests_filled",
+    "required": true}, {"type": "double", "name": "time_mean_median_gap_filled", "required":
+    true}, {"type": "double", "name": "requests_per_route", "required": true}, {"type":
+    "double", "name": "mem_mean_used_filled", "required": true}, {"type": "double",
+    "name": "mem_max_used_filled", "required": true}, {"type": "double", "name": "mem_min_used_filled",
+    "required": true}, {"type": "string", "name": "region", "required": true}, {"type":
+    "string", "name": "is_one_shot", "required": true}, {"type": "string", "name":
+    "has_memory_metric", "required": true}, {"type": "double", "name": "routes_per_request",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-05-26 20:11:20.151557'
