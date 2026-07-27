@@ -3,6 +3,26 @@ import numpy as np
 from pathlib import Path
 import os
 
+
+def _time_between_requests(
+    timestamps: pd.Series,
+    statistic: str,
+) -> float:
+    """Calcula tiempos entre requests sin operar sobre grupos vacíos."""
+
+    differences = timestamps.sort_values().diff().dropna()
+
+    if differences.empty:
+        return 0.0
+
+    if statistic == "mean":
+        return float(differences.mean())
+
+    if statistic == "median":
+        return float(differences.median())
+
+    raise ValueError(f"Estadística no soportada: {statistic}")
+
 def build_agents_frame(
     pre_frame: pd.DataFrame,
     group_cols: list[str] | None = None,
@@ -180,12 +200,12 @@ def process_features_log_drains(fuente_datos : pd.DataFrame) -> pd.DataFrame:
 
             mean_time_between_requests_ms = (
                 'proxy.timestamp',
-                lambda x: x.sort_values().diff().mean()
+                lambda x: _time_between_requests(x, "mean")
             ),
 
             median_time_between_requests_ms = (
                 'proxy.timestamp',
-                lambda x : x.sort_values().diff().median()
+                lambda x: _time_between_requests(x, "median")
             )  
         )
         .reset_index()
@@ -263,12 +283,12 @@ def process_features_log_drains_ver2(fuente_datos : pd.DataFrame) -> pd.DataFram
 
             mean_time_between_requests_ms = (
                 'proxy.timestamp',
-                lambda x: x.sort_values().diff().mean()
+                lambda x: _time_between_requests(x, "mean")
             ),
 
             median_time_between_requests_ms = (
                 'proxy.timestamp',
-                lambda x : x.sort_values().diff().median()
+                lambda x: _time_between_requests(x, "median")
             )
             
         )
@@ -285,6 +305,5 @@ def process_features_log_drains_ver2(fuente_datos : pd.DataFrame) -> pd.DataFram
     new_view['is_one_shot'] = (new_view['routes_visited'] == 1)
 
     return new_view
-
 
 
