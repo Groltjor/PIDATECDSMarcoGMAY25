@@ -13,7 +13,7 @@ La entrega **no está contenida únicamente en los notebooks**:
 
 Así mismo dentro del siguiente enlace se encuentra la versión demo con interfaz y como se comportaria con el modelo cargado dentro de una interfaz de Next.JS, estos contenidos estan fuera del scope del proyecto de certificación original y podria considerarse como opcional, sin embargo es mi entregable que cumple con los objetivos de proyecto final.
 
-- [Vercel - App](https://log-hound.vercel.app)
+- [Vercel - App](https://log-hound.vercel.app) Contiene una simulación sin datos de la version final de la app en next.js.
 - [Loghound Repo](https://github.com/Groltjor/LogHound) Contiene el repositorio final y reproducible del Producto de Machine Learning.
 
 La versión anterior no contempla acciones de Firewall ni datos reales de producción, sin embargo se comparte como parte de la entrega, ya que la rubrica contempla una interfaz.
