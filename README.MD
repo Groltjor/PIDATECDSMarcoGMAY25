@@ -11,7 +11,7 @@ La entrega **no está contenida únicamente en los notebooks**:
 
 Así mismo dentro del siguiente enlace se encuentra la versión demo con interfaz y como se comportaria con el modelo cargado dentro de una interfaz de Next.JS:
 
-[Vercel - App](https://log-hound.vercel.app/home/space/)
+[Vercel - App](https://log-hound.vercel.app)
 
 La versión anterior no contempla acciones de Firewall ni datos reales de producción, sin embargo se comparte como parte de la entrega, ya que la rubrica contempla una interfaz.
 En este caso adjunto también en:
