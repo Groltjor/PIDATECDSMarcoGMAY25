@@ -8,15 +8,15 @@ La entrega **no está contenida únicamente en los notebooks**:
 
 - [`Notebooks/`](Notebooks/) presenta el proceso, las decisiones, los experimentos y los resultados.
 - [`src/utils/`](src/utils/) contiene las funciones reutilizables de extracción, limpieza, análisis, ingeniería de características y entrenamiento.
+- [Conclusiones](Conclusiones.MD) presenta las conclusiones recopiladas del proyecto y sobre el modelo seleccionado.
+- [Interface - Streamlit](interface) contiene una interfaz básica para el proyecto bajo la rúbrica del Tec.
 
-Así mismo dentro del siguiente enlace se encuentra la versión demo con interfaz y como se comportaria con el modelo cargado dentro de una interfaz de Next.JS:
+Así mismo dentro del siguiente enlace se encuentra la versión demo con interfaz y como se comportaria con el modelo cargado dentro de una interfaz de Next.JS, estos contenidos estan fuera del scope del proyecto de certificación original y podria considerarse como opcional, sin embargo es mi entregable que cumple con los objetivos de proyecto final.
 
-[Vercel - App](https://log-hound.vercel.app)
+- [Vercel - App](https://log-hound.vercel.app)
+- [Loghound Repo](https://github.com/Groltjor/LogHound) Contiene el repositorio final y reproducible del Producto de Machine Learning.
 
 La versión anterior no contempla acciones de Firewall ni datos reales de producción, sin embargo se comparte como parte de la entrega, ya que la rubrica contempla una interfaz.
-En este caso adjunto también en:
-
-- [Interface - Streamlit](interface)
 
 ### Ejecutar la interfaz local
 
