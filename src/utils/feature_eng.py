@@ -261,7 +261,7 @@ def process_features_log_drains_ver2(fuente_datos : pd.DataFrame) -> pd.DataFram
     )
 
     df = df.dropna(subset = ['timestamp_dt', 'ja4Digest'])
-    df['time_window'] = df['timestamp_dt'].dt.floor('10min')
+    df['time_window'] = df['timestamp_dt'].dt.floor('10min') ## Este es muy importante para hacer agrupaciones de 10 minutos.
 
     new_view = (
         df
